@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f0ff;
+    font-family: Arial, sans-serif;
+    color: #302747;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(48, 39, 71, 0.08);
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #88809a;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ded5f0;
+    border-radius: 10px;
+    font-size: 14px;
+    outline-color: #9875db;
+}
+
+button {
+    padding: 11px 14px;
+    border: none;
+    border-radius: 9px;
+    background-color: #9875db;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #f8f5ff;
+    border-radius: 10px;
+}
+
+li input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #9875db;
+}
+
+li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+li.done span {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+li button {
+    flex-shrink: 0;
+    padding: 7px 9px;
+}
+
+li .edit-btn {
+    background-color: #e9e0fa;
+    color: #60488e;
+}
+
+li .delete-btn {
+    background-color: #ffe8ed;
+    color: #b33b55;
+}
+
+#taskCount {
+    margin-top: 18px;
+    color: #88809a;
+    font-size: 13px;
+}
